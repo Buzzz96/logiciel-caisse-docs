@@ -20,7 +20,7 @@
     
     
       
-        <title>Etapes d'installation - PER Caisse | Documentation</title>
+        <title>Étapes d'installation - PER Caisse | Documentation</title>
       
     
     
@@ -106,7 +106,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Etapes d'installation
+              Étapes d'installation
             
           </span>
         </div>
@@ -227,7 +227,7 @@
   
     
   
-  Etapes d'installation
+  Étapes d'installation
 
       </a>
     </li>
@@ -360,7 +360,7 @@
           
   
   <span class="md-ellipsis">
-    Etapes d'installation
+    Étapes d'installation
   </span>
   
 
@@ -371,7 +371,7 @@
         
   
   <span class="md-ellipsis">
-    Etapes d'installation
+    Étapes d'installation
   </span>
   
 
@@ -432,7 +432,7 @@
           <li class="md-nav__item">
   <a href="#2-creation-et-activation-dun-environnement-virtuel" class="md-nav__link">
     <span class="md-ellipsis">
-      2. Création et Activation d'un Environnement Virtuel
+      2. Création et activation d'un environnement virtuel
     </span>
   </a>
   
@@ -441,7 +441,7 @@
           <li class="md-nav__item">
   <a href="#3-installation-des-dependances-avec-pip" class="md-nav__link">
     <span class="md-ellipsis">
-      3. Installation des Dépendances avec Pip
+      3. Installation des dépendances avec pip
     </span>
   </a>
   
@@ -462,9 +462,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#lancer-le-projet-en-mode-developement" class="md-nav__link">
+  <a href="#lancer-le-projet-en-mode-developpement" class="md-nav__link">
     <span class="md-ellipsis">
-      Lancer le projet en mode developement
+      Lancer le projet en mode développement
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#inserer-les-donnees-initiales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Insérer les données initiales
     </span>
   </a>
   
@@ -553,39 +562,40 @@
                   
 
 
-<h1 id="etapes-dinstallation">Etapes d'installation</h1>
+<h1 id="etapes-dinstallation">Étapes d'installation</h1>
 <ul>
 <li><code>Cloner le projet.</code></li>
 <li><code>Installation de npm.</code></li>
 <li><code>Installation de Python.</code></li>
-<li><code>Creation de la base de données.</code></li>
-<li><code>Lancer le projet mode developement.</code></li>
+<li><code>Création de la base de données.</code></li>
+<li><code>Lancer le projet en mode développement.</code></li>
 </ul>
 <h2 id="cloner-le-projet">Cloner le projet</h2>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://git.enib.fr/h1serhan/logiciel-caisse.git
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ayoubachak/logiciel-caisse.git
 </code></pre></div>
 <h2 id="installation-de-npm">Installation de npm</h2>
+<p>Dans le dossier principal du projet :
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>npm<span class="w"> </span>install
-</code></pre></div>
+</code></pre></div></p>
 <h2 id="installation-de-python-et-de-flask">Installation de Python et de Flask</h2>
 <p>Cette section guide à travers les étapes d'installation de Python et de Flask, nécessaires pour exécuter le backend de l'application.</p>
 <h3 id="1-installation-de-python">1. Installation de Python</h3>
 <p>Téléchargez et installez la dernière version de Python depuis le <a href="https://www.python.org/downloads/">site officiel de Python</a>. Python est essentiel pour exécuter le serveur Flask et gérer les dépendances de l'application.</p>
-<h3 id="2-creation-et-activation-dun-environnement-virtuel">2. Création et Activation d'un Environnement Virtuel</h3>
+<h3 id="2-creation-et-activation-dun-environnement-virtuel">2. Création et activation d'un environnement virtuel</h3>
 <p>Un environnement virtuel (<code>venv</code>) isole les dépendances du projet pour éviter tout conflit avec d'autres projets ou avec le système global.</p>
 <ul>
 <li>
 <p><strong>Pour Windows :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Creation d&#39;un environnement virtuel nommé &quot;venv&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># Création d&#39;un environnement virtuel nommé &quot;venv&quot;</span>
 <a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>python<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
 <a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
 <a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="c1"># Activation de &quot;venv&quot;</span>
-<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>venv/scripts/activate
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
 </code></pre></div></p>
 </li>
 <li>
 <p><strong>Pour Linux :</strong>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Creation d&#39;un environnement virtuel nommé &quot;venv&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Création d&#39;un environnement virtuel nommé &quot;venv&quot;</span>
 <a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>venv
 <a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
 <a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Activation de &quot;venv&quot;</span>
@@ -593,37 +603,35 @@
 </code></pre></div></p>
 </li>
 </ul>
-<h3 id="3-installation-des-dependances-avec-pip">3. Installation des Dépendances avec Pip</h3>
+<h3 id="3-installation-des-dependances-avec-pip">3. Installation des dépendances avec pip</h3>
 <p>Après avoir activé l'environnement virtuel, installez Flask et les autres dépendances requises en utilisant <code>pip</code>. Ces dépendances sont définies dans le fichier <code>requirements.txt</code>.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Naviguer dans le Répertoire du Backend</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Naviguer dans le répertoire du backend</span>
 <a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">cd</span><span class="w"> </span>backend
 <a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
-<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Installation des dépandances</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Installation des dépendances</span>
 <a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>pip<span class="w"> </span>install<span class="w"> </span>-r<span class="w"> </span>requirements.txt
 </code></pre></div></p>
 <h2 id="creation-de-la-base-de-donnees">Création de la base de données</h2>
 <p>Pour initialiser et configurer la base de données de l'application, suivez les étapes suivantes :</p>
-<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Naviguer dans le Répertoire du Backend</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">cd</span><span class="w"> </span>backend
+<p><div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Initialisation de la base de données</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>flask<span class="w"> </span>db<span class="w"> </span>init
 <a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
-<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Définir la variable d&#39;environnement FLASK_APP</span>
-<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a><span class="nb">export</span><span class="w"> </span><span class="nv">FLASK_APP</span><span class="o">=</span>./server.py
+<a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Migration de la base de données</span>
+<a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>flask<span class="w"> </span>db<span class="w"> </span>migrate
 <a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>
-<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># Initialisation de la Base de Données avec Flask</span>
-<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>flask<span class="w"> </span>db<span class="w"> </span>init
-<a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>
-<a id="__codelineno-5-10" name="__codelineno-5-10" href="#__codelineno-5-10"></a><span class="c1"># Migration de la Base de Données</span>
-<a id="__codelineno-5-11" name="__codelineno-5-11" href="#__codelineno-5-11"></a>flask<span class="w"> </span>db<span class="w"> </span>migrate
-<a id="__codelineno-5-12" name="__codelineno-5-12" href="#__codelineno-5-12"></a>
-<a id="__codelineno-5-13" name="__codelineno-5-13" href="#__codelineno-5-13"></a><span class="c1"># Mise à jour de la Base de Données</span>
-<a id="__codelineno-5-14" name="__codelineno-5-14" href="#__codelineno-5-14"></a>flask<span class="w"> </span>db<span class="w"> </span>upgrade
+<a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a><span class="c1"># Mise à jour de la base de données</span>
+<a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>flask<span class="w"> </span>db<span class="w"> </span>upgrade
 </code></pre></div>
 Ces commandes prépareront la base de données pour le bon fonctionnement de l'application. Assurez-vous d'exécuter ces commandes dans le répertoire du backend où se trouve le serveur Flask.</p>
-<h2 id="lancer-le-projet-en-mode-developement">Lancer le projet en mode developement</h2>
-<p>En suivant ces étapes, vous serez prêt à lancer et à utiliser le serveur Flask avec votre application ReactJS.
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Lancer le serveur Flask avec l&#39;application ReactJS</span>
-<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>npm<span class="w"> </span>run<span class="w"> </span>app
-</code></pre></div></p>
+<h2 id="lancer-le-projet-en-mode-developpement">Lancer le projet en mode développement</h2>
+<p>En suivant ces étapes, vous serez prêt à lancer et à utiliser le serveur Flask.</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Lancer le backend (dans le dossier backend)</span>
+<a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>python<span class="w"> </span>app.py
+</code></pre></div>
+<h2 id="inserer-les-donnees-initiales">Insérer les données initiales</h2>
+<p>Après avoir lancé le backend, exécutez la commande suivante pour insérer les données initiales dans la base de données :</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>http://localhost:8000/init-db
+</code></pre></div>
 
 
 
@@ -661,7 +669,7 @@ Ces commandes prépareront la base de données pour le bon fonctionnement de l'a
       <div class="md-copyright">
   
     <div class="md-copyright__highlight">
-      &copy; 2023 <a href="https://enib.fr"  target="_blank" rel="noopener">ENIB | Johnny SAGHBINI - Hassan SERHAN - Roy AL NABBOUT - Valentine BUQUET - Nagham AJINEH</a>
+      &copy; 2024 <a href="https://enib.fr"  target="_blank" rel="noopener">ENIB | Antonio GERGES - Ayoub ACHAK - Salma ZIDAN - Jule BATAILLE - Adam EL ALAMI - Zineb MOTIK </a>
     </div>
   
   
